@@ -15,11 +15,14 @@ public class MainController {
 
     @RequestMapping("/cc")
     public String test1() {
-
         return "index";
     }
 
-
+    //手机端调试
+    @RequestMapping("/aa")
+    public String test2() {
+        return "mobile/appointment-input";
+    }
 
 
 }

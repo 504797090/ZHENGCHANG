@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息填写</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <style>
+        .asterisk{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page">
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back" href="/demos/list">
+                <span class="icon icon-left"></span>
+                返回
+            </a>
+            <h1 class="title">可选择列表</h1>
+        </header>
+        <div class="content">
+            <div class="content-block-title">简单列表</div>
+            <div class="list-block media-list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
+                                </div>
+                                <div class="item-subtitle">子标题</div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- 其他的单个page内联页（如果有） -->
+    <div class="page">...</div>
+</div>
+
+<!-- 侧栏 -->
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>信息填写</p>
+        <p>活动详情</p>
+        <p></p>
+
+        <p><a href="#" class="close-panel">关闭</a></p>
+    </div>
+</div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<!-- 默认必须要执行$.init(),实际业务里一般不会在HTML文档里执行，通常是在业务页面代码的最后执行 -->
+<!-- <script>$.init()</script> -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.init();
+    });
+</script>
+
+
+
+
+</body>
+</html>

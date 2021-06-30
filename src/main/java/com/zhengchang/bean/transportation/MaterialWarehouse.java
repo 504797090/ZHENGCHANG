@@ -1,4 +1,4 @@
-package com.zhengchang.bean;
+package com.zhengchang.bean.transportation;
 
 import lombok.Data;
 //原料仓库表

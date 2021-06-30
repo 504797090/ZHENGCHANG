@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhengchang.mapper.transportation.AccessControlSystemMapper">
+
+
+    <select id="findRecordByVehicle" resultType="java.lang.Integer">
+      SELECT COUNT(*) FROM access_control_system WHERE data_Plate_number = #{dataPlateNumber}
+    </select>
+
+     <insert id="addOneRecord">
+         insert into  access_control_system
+         values(null,#{acsNumber},#{dataRfid}, #{dataPlateNumber},UNIX_TIMESTAMP(NOW()) ,#{record} ,#{sId} ,#{uId} ,#{direction} )
+     </insert>
+
+
+<!--这个车牌本身就有不用添加，只需要udate-->
+    <update id="updateOneRecord">
+        update   access_control_system
+        set data_rfid =#{dataRfid}, in_out_date ={inOutDate} ,
+         record =  CONCAT ((SELECT record WHERE acs_id = #{acsId} ),#{record})  ,
+          s_Id  =#{sId},uId ={uId}  , direction =#{direction}
+    </update>
+
+
+
+</mapper>

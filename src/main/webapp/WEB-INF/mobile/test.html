@@ -19,199 +19,120 @@
 <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
 <div class="page-group">
     <!-- 单个page ,第一个.page默认被展示-->
-    <div class="page">
+    <div id="page-view-list" class="page">
         <header class="bar bar-nav">
-            <a class="button button-link button-nav pull-left back" href="/demos/list">
-                <span class="icon icon-left"></span>
-                返回
+            <a class="icon icon-me pull-left open-panel" data-panel=".panel-left"></a>
+            <a class="button button-link button-nav pull-right open-popup" data-popup=".popup-about">
+                关于
+                <span class="icon icon-menu"></span>
             </a>
-            <h1 class="title">可选择列表</h1>
+            <h1 class="title">SUI Mobile</h1>
         </header>
-        <div class="content">
-            <div class="list-block contacts-block">
-                <div class="list-group">
-                    <ul>
-                        <li class="list-group-title">A</li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题1</div>
+        <div class="bar bar-standard bar-footer">
+            <a class="icon icon-edit pull-left"></a>
+            <a class="icon icon-settings pull-right open-panel" data-panel=".panel-right"></a>
+        </div>
+        <div class="content" id='page-index'>
+            <div class="content-block-title">简单列表</div>
+            <div class="list-block media-list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题2</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题3</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题4</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题5</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题6</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">标题</div>
                                 </div>
+                                <div class="item-subtitle">子标题</div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题7</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题8</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="list-group">
-                    <ul>
-                        <li class="list-group-title">B</li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题1</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题2</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题3</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题4</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题5</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题6</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="list-group">
-                    <ul>
-                        <li class="list-group-title">C</li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题1</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题2</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题3</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题4</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题5</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题6</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题7</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="list-group">
-                    <ul>
-                        <li class="list-group-title">V</li>
-                        <li>
-                            <div class="item-content">
-                                <div class="item-inner">
-                                    <div class="item-title">标题1</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
-    </div>
-    </div>
+    <nav class="bar bar-tab">
+        <a class="tab-item external active" href="#">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">Label</span>
+        </a>
+        <a class="tab-item external" href="#">
+            <span class="icon icon-me"></span>
+            <span class="tab-label">Label</span>
+            <span class="badge">2</span>
+        </a>
+        <a class="tab-item external" href="#">
+            <span class="icon icon-star"></span>
+            <span class="tab-label">Label</span>
+        </a>
+        <a class="tab-item external" href="#">
+            <span class="icon icon-cart"></span>
+            <span class="tab-label">Label</span>
+        </a>
+        <a class="tab-item external" href="#">
+            <span class="icon icon-settings"></span>
+            <span class="tab-label">Label</span>
+        </a>
+    </nav>
 
-    <!-- 其他的单个page内联页（如果有） -->
-    <div class="page">...</div>
 </div>
+
 
 <!-- 侧栏 -->
 <div class="panel-overlay"></div>

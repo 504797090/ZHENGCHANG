@@ -1,4 +1,4 @@
-package com.zhengchang.bean;
+package com.zhengchang.bean.transportation;
 
 //车辆绑定
 

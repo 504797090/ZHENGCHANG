@@ -26,15 +26,15 @@
 
         <!-- 底部工具栏 -->
         <nav class="bar bar-tab">
-            <a class="tab-item external active" href="#">
+            <a class="tab-item external" href="${pageContext.request.contextPath}/u/index">
                 <span class="icon icon-menu"></span>
                 <span class="tab-label">首页</span>
             </a>
-            <!--<a class="tab-item external" href="#">-->
-            <!--<span class="icon icon-star"></span>-->
-            <!--<span class="tab-label">收藏</span>-->
-            <!--</a>-->
-            <a class="tab-item external" href="#">
+            <a class="tab-item external active" href="${pageContext.request.contextPath}/u/appointment">
+                <span class="icon icon-star"></span>
+                <span class="tab-label">订单预约</span>
+            </a>
+            <a class="tab-item external" href="${pageContext.request.contextPath}/u/me">
                 <span class="icon icon-home"></span>
                 <span class="tab-label">我的</span>
             </a>
@@ -43,24 +43,57 @@
         <!-- 这里是页面内容区 -->
         <div class="content">
 
+            <div class="content-block-title">请选择项目</div>
+            <!--<div class="list-block">-->
+            <!--<ul>-->
+            <!--<li class="item-content">-->
+            <!--<div class="item-content">-->
+            <!--&lt;!&ndash;<div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44"></div>&ndash;&gt;-->
+            <!--<div class="item-inner">-->
+            <!--<div class="item-title-row">-->
+            <!--<div class="item-title">散装原料接收</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;<div class="item-subtitle">散装原料接收</div>&ndash;&gt;-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</div>-->
 
 
-            <div class="content-block-title">已选项目</div>
-            <div class="list-block">
+            <div class="list-block media-list">
                 <ul>
-                    <li class="item-content">
-                        <div class="item-content">
-                            <div class="item-media"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fedb0a6f228442c397fb56c817c5ef5bd2d3f535b266ce-7RRYKw_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627286238&t=37816f38127d92cb3346a9b0f9c8c005" width="44"></div>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="radio" name="my-radio">
+                            <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
                             <div class="item-inner">
                                 <div class="item-title-row">
                                     <div class="item-title">散装原料接收</div>
                                 </div>
-                                <!--<div class="item-subtitle">散装原料接收</div>-->
                             </div>
-                        </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="radio" name="my-radio">
+                            <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">袋装原料接收</div>
+                                    <!--<div class="item-after">-->
+                                    <!--<div class="item-input">-->
+                                    <!--<input type="text" placeholder="请输入其他类型" class="">-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </label>
                     </li>
                 </ul>
             </div>
+
+
             <div class="content-block-title">预约日期<span class="asterisk"> *</span></div>
             <div class="list-block">
                 <ul>
@@ -81,9 +114,9 @@
                                 <div class="item-title-row">
                                     <div class="item-title">07:00-08:59</div>
                                     <div class="item-after">
-                                        <div class="item-title">
-                                            剩余:10
-                                        </div>
+                                        <!--<div class="item-title">-->
+                                        <!--剩余:10-->
+                                        <!--</div>-->
 
                                     </div>
                                 </div>
@@ -98,9 +131,9 @@
                                 <div class="item-title-row">
                                     <div class="item-title">09:00-11:59</div>
                                     <div class="item-after">
-                                        <div class="item-title">
-                                            剩余:10
-                                        </div>
+                                        <!--<div class="item-title">-->
+                                        <!--剩余:10-->
+                                        <!--</div>-->
 
                                     </div>
                                 </div>
@@ -115,9 +148,9 @@
                                 <div class="item-title-row">
                                     <div class="item-title">13:00-14:59</div>
                                     <div class="item-after">
-                                        <div class="item-title">
-                                            剩余:10
-                                        </div>
+                                        <!--<div class="item-title">-->
+                                        <!--剩余:10-->
+                                        <!--</div>-->
 
                                     </div>
                                 </div>
@@ -132,32 +165,29 @@
                                 <div class="item-title-row">
                                     <div class="item-title">15:00-16:59</div>
                                     <div class="item-after">
-                                        <div class="item-title">
-                                            剩余:10
-                                        </div>
+                                        <!--<div class="item-title">-->
+                                        <!--剩余:10-->
+                                        <!--</div>-->
 
                                     </div>
                                 </div>
                             </div>
                         </label>
                     </li>
-
-
-
                 </ul>
             </div>
-            <div class="content-block-title">预约人数<span class="asterisk"> *</span></div>
+            <!--<div class="content-block-title">预约人数<span class="asterisk"> *</span></div>-->
 
-            <div class="list-block media-list">
-                <ul>
-                    <li class="item-content">
-                        <div class="item-input">
-                            <input type="text" placeholder="请输入预约人数" class="">
-                        </div>
-                    </li>
-                </ul>
+            <!--<div class="list-block media-list">-->
+            <!--<ul>-->
+            <!--<li class="item-content">-->
+            <!--<div class="item-input">-->
+            <!--<input type="text" placeholder="请输入预约人数" class="">-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--</ul>-->
 
-            </div>
+            <!--</div>-->
 
 
             <div class="content-block-title">原料<span class="asterisk"> *</span></div>
@@ -252,20 +282,6 @@
                     </li>
                 </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

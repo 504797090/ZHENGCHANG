@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhengchang.mapper.transportation.SampleMapper">
+
+    <select id="findAllWaitGoods" resultType="com.zhengchang.bean.vo.SampleReceiceMaterial">
+
+        select * from sample  s
+        left join  receive_material r  on s.sa_id =  r.sa_id
+        where s.state =1  ORDER BY  r.appointment_date DESC
+
+    </select>
+
+
+    <select id="findAllProceedGoods" resultType="com.zhengchang.bean.vo.SampleReceiceMaterial">
+        select * from sample  s
+        left join  receive_material r  on s.sa_id =  r.sa_id
+        where s.state =2  ORDER BY  r.appointment_date DESC
+    </select>
+
+
+    <update id="updateCarStatus">
+update sample set  state=2 where sa_id ={#saId}
+    </update>
+
+    <update id="updateCarStatusAndReport">
+        update   sample set  state =3,   sample_name =#{sampleName},
+        sample _report=#{sampleReport}, result=#{result}
+        where  sa_id =#{saId}
+    </update>
+
+
+
+
+
+
+</mapper>

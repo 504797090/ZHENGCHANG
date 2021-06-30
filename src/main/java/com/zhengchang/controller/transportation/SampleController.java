@@ -27,11 +27,12 @@ public class SampleController {
     SampleReceiceMaterial findAllProceedGoods(){
         return  sampleService.findAllProceedGoods();
     }
-    @RequestMapping("/getproceed")
+    @RequestMapping("/carstatus")
     @ResponseBody
     int  updateCarStatus(int saId){
         return sampleService.updateCarStatus(saId);
     }
+
 
 
 }

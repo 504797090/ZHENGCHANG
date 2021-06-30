@@ -31,8 +31,14 @@ update sample set  state=2 where sa_id ={#saId}
     </update>
 
 
+    <select id="showPosition">
+               select * from sample  s where s.state =1  order by s.sa_id desc
 
+    </select>
 
+<select id="showPosition">
+    SELECT COUNT(*) FROM   sample WHERE sa_id	 <![CDATA[ <= ]]>  #{saId}
+</select>
 
 
 </mapper>

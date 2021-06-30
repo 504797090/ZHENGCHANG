@@ -31,4 +31,9 @@ public class SampleServiceImpl implements SampleService {
     public int updateCarStatusAndReport(Sample sample) {
         return sampleMapper.updateCarStatusAndReport(sample);
     }
+
+    @Override
+    public int showPosition(int saId) {
+        return sampleMapper.showPosition(saId);
+    }
 }

@@ -1,5 +1,6 @@
 package com.zhengchang.controller.transportation;
 
+import com.zhengchang.bean.transportation.Sample;
 import com.zhengchang.bean.vo.SampleReceiceMaterial;
 import com.zhengchang.service.transportation.SampleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,23 +17,35 @@ public class SampleController {
     private SampleService sampleService;
 
 
-    @RequestMapping("/getwait")
+    @RequestMapping("/getWait")
     @ResponseBody
-    SampleReceiceMaterial findAllWaitGoods(){
-        return  sampleService.findAllWaitGoods();
+    SampleReceiceMaterial findAllWaitGoods() {
+        return sampleService.findAllWaitGoods();
     }
 
-    @RequestMapping("/getproceed")
+    @RequestMapping("/getProceed")
     @ResponseBody
-    SampleReceiceMaterial findAllProceedGoods(){
-        return  sampleService.findAllProceedGoods();
+    SampleReceiceMaterial findAllProceedGoods() {
+        return sampleService.findAllProceedGoods();
     }
-    @RequestMapping("/carstatus")
+
+    @RequestMapping("/carStatus")
     @ResponseBody
-    int  updateCarStatus(int saId){
+    int updateCarStatus(int saId) {
         return sampleService.updateCarStatus(saId);
     }
 
+    @RequestMapping("/getReport")
+    @ResponseBody
+    int updateCarStatusAndReport(Sample sample) {
+        return sampleService.updateCarStatusAndReport(sample);
+    }
+
+    @RequestMapping("/getPosition")
+    @ResponseBody
+    int showPosition(int saId) {
+        return sampleService.showPosition(saId);
+    }
 
 
 }

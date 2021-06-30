@@ -24,5 +24,8 @@ public interface SampleMapper {
     //检查结束生成报告 + 更新状态
     int updateCarStatusAndReport(Sample sample);
 
+    //给用户显示  当前所在位置 根据said
+    int showPosition(int saId);
+
 
 }

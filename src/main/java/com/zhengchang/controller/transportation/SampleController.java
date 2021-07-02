@@ -16,7 +16,6 @@ public class SampleController {
     @Autowired
     private SampleService sampleService;
 
-
     @RequestMapping("/getWait")
     @ResponseBody
     SampleReceiceMaterial findAllWaitGoods() {

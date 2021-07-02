@@ -12,6 +12,9 @@ public class FeedTypesSeries {
     private String series;//系列类型
     private String types;//系列所属饲料类型
     private String specifications;//规格
+    private String name;//名称
     private String price;//单价
+    private String usedToType;//用于收料，还是发货
+    private String location;//库位
 
 }

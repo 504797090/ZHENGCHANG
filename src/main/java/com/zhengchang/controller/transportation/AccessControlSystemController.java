@@ -29,6 +29,4 @@ public class AccessControlSystemController {
         }
         return result;
     }
-
-
 }

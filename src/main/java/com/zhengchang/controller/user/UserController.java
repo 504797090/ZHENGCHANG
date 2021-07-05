@@ -10,6 +10,7 @@ public class UserController {
 
     @RequestMapping("/index")
     public String intoIndex(){
+        System.out.println("访问!!!!!");
         return "mobile/appointment-index";
     }
 

@@ -15,6 +15,7 @@ public class MainController {
 
     @RequestMapping("/cc")
     public String test1() {
+
         return "index";
     }
 

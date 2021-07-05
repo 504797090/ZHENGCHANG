@@ -5,10 +5,10 @@ spring:
 #    username: dmag
 #    # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果) 以下解密结果为root
 #    password: dmag
-    url: jdbc:mysql://localhost:3306/zhengchang?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true&useAffectedRows=true
+    url: jdbc:mysql://36.26.54.86:3306/zhengchang?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true&useAffectedRows=true
     username: root
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果) 以下解密结果为root
-    password: root
+    password: 123456
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       pool-name: Sqlparser_HikariCP

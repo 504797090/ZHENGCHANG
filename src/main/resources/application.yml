@@ -23,12 +23,12 @@ spring:
     view:
       prefix : /WEB-INF/
       suffix : .jsp
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: admin
-    password: admin
-    virtual-host: /
+#  rabbitmq:
+#    host: 36.26.54.86
+#    port: 5672
+#    username: admin
+#    password: admin
+#    virtual-host: /
 #  mail:
 #    host: smtp.126.com
 #    username: beaver_lufeng@126.com

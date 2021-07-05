@@ -52,16 +52,16 @@
                 <div class="content-block-title"></div>
                 <ul>
                     <li>
-                        <a href="/demos/list/contacts-list" class="item-link item-content">
+                        <a href="${pageContext.request.contextPath}/u/editDriver" class="item-link item-content">
                             <div class="item-inner">
-                                <div class="item-title">手机号绑定</div>
+                                <div class="item-title">司机管理</div>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="/demos/list/songs-list" class="item-link item-content">
+                        <a href="${pageContext.request.contextPath}/u/editPlate" class="item-link item-content">
                             <div class="item-inner">
-                                <div class="item-title">车牌号绑定</div>
+                                <div class="item-title">车牌号管理</div>
                             </div>
                         </a>
                     </li>

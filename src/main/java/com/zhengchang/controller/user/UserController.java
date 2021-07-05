@@ -24,6 +24,14 @@ public class UserController {
         return "mobile/appointment-me";
     }
 
+    @RequestMapping("/editDriver")
+    public String editDriver(){
+        return "mobile/me/driver";
+    }
 
+    @RequestMapping("/editPlate")
+    public String editPlate(){
+        return "mobile/me/plate-number";
+    }
 
 }
